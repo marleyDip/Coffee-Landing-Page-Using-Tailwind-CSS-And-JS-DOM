@@ -5,7 +5,23 @@
 @tailwind utilities;
 
 body {
-    @apply font-Poppins max-w-[1920px] bg-black text-green-950 mx-auto text-sm;
+    @apply font-Poppins max-w-[1920px] bg-white text-green-950 mx-auto text-sm;
+}
+
+h1 {
+    @apply text-white text-5xl font-bold md:text-7xl lg:text-[80px] xl:text-[100px];
+}
+
+h2 {
+    @apply text-3xl font-bold md:text-5xl;
+}
+
+h3 {
+    @apply text-2xl font-bold;
+}
+
+h4 {
+    @apply text-base font-bold sm:text-lg;
 }
 
 /* nav menu */
