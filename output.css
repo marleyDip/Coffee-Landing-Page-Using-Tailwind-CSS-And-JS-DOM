@@ -660,6 +660,14 @@ video {
   top: 33.333333%;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
+.-right-20{
+  right: -5rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -733,6 +741,10 @@ video {
   height: 2rem;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .min-h-\[70vh\]{
   min-height: 70vh;
 }
@@ -773,12 +785,20 @@ video {
   width: 100%;
 }
 
+.w-1\/3{
+  width: 33.333333%;
+}
+
 .max-w-5xl{
   max-width: 64rem;
 }
 
 .max-w-\[1920px\]{
   max-width: 1920px;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .flex-1{
@@ -935,6 +955,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -950,6 +975,21 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .pb-\[40\%\]{
   padding-bottom: 40%;
 }
@@ -962,12 +1002,24 @@ video {
   padding-top: 10rem;
 }
 
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .text-center{
   text-align: center;
 }
 
 .text-right{
   text-align: right;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .text-2xl{
@@ -987,6 +1039,10 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.leading-tight{
+  line-height: 1.25;
 }
 
 .text-black{
@@ -1247,6 +1303,11 @@ h4{
     left: -2.5rem;
   }
 
+  .md\:mx-12{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
   .md\:h-20{
     height: 5rem;
   }
@@ -1259,12 +1320,20 @@ h4{
     width: 5rem;
   }
 
+  .md\:max-w-md{
+    max-width: 28rem;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row{
     flex-direction: row;
+  }
+
+  .md\:items-start{
+    align-items: flex-start;
   }
 
   .md\:gap-2{
@@ -1276,12 +1345,21 @@ h4{
     padding-right: 2.5rem;
   }
 
+  .md\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .md\:pb-\[30\%\]{
     padding-bottom: 30%;
   }
 
   .md\:pb-\[45\%\]{
     padding-bottom: 45%;
+  }
+
+  .md\:text-start{
+    text-align: start;
   }
 }
 
@@ -1391,6 +1469,10 @@ h4{
 }
 
 @media (min-width: 1280px){
+  .xl\:-right-24{
+    right: -6rem;
+  }
+
   .xl\:h-\[450px\]{
     height: 450px;
   }
@@ -1421,5 +1503,10 @@ h4{
 
   .xl\:pb-\[20\%\]{
     padding-bottom: 20%;
+  }
+
+  .xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
