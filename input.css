@@ -5,5 +5,32 @@
 @tailwind utilities;
 
 body {
-    @apply font-Poppins text-green-950;
+    @apply font-Poppins max-w-[1920px] bg-black text-green-950 mx-auto text-sm;
 }
+
+/* nav menu */
+.nav-link {
+    @apply  text-xl font-bold  duration-300 lg:text-base;
+}
+
+.nav-link:hover, 
+.active {
+    @apply text-green-700;
+}
+
+.nav-icons-mobile li:hover {
+    @apply border-green-700 duration-300;
+}
+
+.nav-icons-mobile li:hover a {
+    @apply text-green-700 duration-300;
+}
+
+.nav-icons li:hover {
+    @apply border-white duration-300;
+}
+
+.nav-icons li:hover a {
+    @apply text-white duration-300;
+}
+/* nav menu */

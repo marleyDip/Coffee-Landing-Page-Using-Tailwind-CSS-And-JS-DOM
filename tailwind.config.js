@@ -6,6 +6,13 @@ export default {
     fontFamily: {
       Poppins: ["Poppins", "sans-serif"],
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        md: "2rem",
+      },
+    },
   },
   plugins: [],
 };
