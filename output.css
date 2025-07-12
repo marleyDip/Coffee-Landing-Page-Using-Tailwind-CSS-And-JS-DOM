@@ -1168,12 +1168,28 @@ h4{
 /* Button */
 
 @media (min-width: 640px){
+  .sm\:left-\[20\%\]{
+    left: 20%;
+  }
+
   .sm\:w-\[80\%\]{
     width: 80%;
   }
 }
 
 @media (min-width: 768px){
+  .md\:left-\[20\%\]{
+    left: 20%;
+  }
+
+  .md\:w-\[\]{
+    width: ;
+  }
+
+  .md\:w-\[80\%\]{
+    width: 80%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1308,6 +1324,14 @@ h4{
 
   .xl\:w-\[750px\]{
     width: 750px;
+  }
+
+  .xl\:w-\[\]{
+    width: ;
+  }
+
+  .xl\:w-\[80\%\]{
+    width: 80%;
   }
 
   .xl\:max-w-5xl{
