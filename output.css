@@ -701,6 +701,14 @@ video {
   margin-top: 1.25rem;
 }
 
+.-ml-14{
+  margin-left: -3.5rem;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -799,6 +807,10 @@ video {
 
 .w-1\/2{
   width: 50%;
+}
+
+.w-24{
+  width: 6rem;
 }
 
 .max-w-5xl{
@@ -903,6 +915,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -921,6 +937,14 @@ video {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.self-start{
+  align-self: flex-start;
+}
+
+.self-center{
+  align-self: center;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -929,8 +953,29 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-l-full{
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
 .border-2{
   border-width: 2px;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
+.border-b{
+  border-bottom-width: 1px;
+}
+
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-black{
@@ -941,6 +986,10 @@ video {
 .border-green-900{
   --tw-border-opacity: 1;
   border-color: rgb(20 83 45 / var(--tw-border-opacity, 1));
+}
+
+.border-white\/30{
+  border-color: rgb(255 255 255 / 0.3);
 }
 
 .bg-black\/80{
@@ -969,6 +1018,18 @@ video {
   background-image: url('assets/images/hero_bg.jpg');
 }
 
+.bg-\[url\(\)\]{
+  background-image: url();
+}
+
+.bg-\[url\(\'assets\/images\/\'\)\]{
+  background-image: url('assets/images/');
+}
+
+.bg-\[url\(\'assets\/images\/footer_bg\.jpg\'\)\]{
+  background-image: url('assets/images/footer_bg.jpg');
+}
+
 .bg-\[length\:400px_400px\]{
   background-size: 400px 400px;
 }
@@ -992,6 +1053,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-3{
@@ -1027,6 +1092,11 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-14{
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .pb-20{
@@ -1069,6 +1139,10 @@ video {
   text-align: justify;
 }
 
+.text-start{
+  text-align: start;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1089,8 +1163,22 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .leading-tight{
@@ -1139,10 +1227,19 @@ video {
   opacity: 0.2;
 }
 
+.opacity-50{
+  opacity: 0.5;
+}
+
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .duration-500{
@@ -1378,7 +1475,26 @@ h4{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-red-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-green-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity, 1));
+}
+
 @media (min-width: 640px){
+  .sm\:flex{
+    display: flex;
+  }
+
   .sm\:w-\[80\%\]{
     width: 80%;
   }
@@ -1408,6 +1524,10 @@ h4{
 
   .md\:w-\[80\%\]{
     width: 80%;
+  }
+
+  .md\:w-28{
+    width: 7rem;
   }
 
   .md\:max-w-md{
@@ -1455,6 +1575,11 @@ h4{
 
   .md\:text-start{
     text-align: start;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1533,6 +1658,14 @@ h4{
     max-width: 56rem;
   }
 
+  .lg\:max-w-xl{
+    max-width: 36rem;
+  }
+
+  .lg\:max-w-full{
+    max-width: 100%;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1565,6 +1698,10 @@ h4{
     gap: 5rem;
   }
 
+  .lg\:self-start{
+    align-self: flex-start;
+  }
+
   .lg\:bg-transparent{
     background-color: transparent;
   }
@@ -1587,6 +1724,10 @@ h4{
 
   .lg\:pt-10{
     padding-top: 2.5rem;
+  }
+
+  .lg\:pl-\[3\%\]{
+    padding-left: 3%;
   }
 
   .lg\:text-start{
@@ -1662,6 +1803,10 @@ h4{
 
   .xl\:pb-\[20\%\]{
     padding-bottom: 20%;
+  }
+
+  .xl\:pl-\[6\%\]{
+    padding-left: 6%;
   }
 
   .xl\:text-6xl{

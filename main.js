@@ -41,6 +41,10 @@ const scrollHeader = () => {
 window.addEventListener("scroll", scrollHeader);
 /*~~~~~~~~~~~~~~~ STICKY HEADER ~~~~~~~~~~~~~~~*/
 
+/*~~~~~~~~~~~~~~~ YEAR ~~~~~~~~~~~~~~~*/
+document.getElementById("year").textContent = new Date().getFullYear();
+/*~~~~~~~~~~~~~~~ YEAR ~~~~~~~~~~~~~~~*/
+
 /*~~~~~~~~~~~~~~~ SHOW SCROLL UP ~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~ SHOW SCROLL UP ~~~~~~~~~~~~~~~*/
 
